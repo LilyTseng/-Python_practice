@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap05-實際應用範例 bootstrap-結合skrollr製作捲動式網頁</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;900&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&amp;display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-top">
+  <div class="container">
+    <div class="navbar-header"><a class="navbar-brand">The Noren</a></div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><a href="#section_ask">暖簾について</a></li>
+        <li class="nav-item"><a href="#section_about">トピックス</a></li>
+        <li class="nav-item"><a href="#section_story">製作事例</a></li>
+        <li class="nav-item"><a href="#section_future">なつくり技術</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="fullscreen-video no-ie">
+  <video id="video" preload="preload" autoplay="autoplay" muted="muted" playsinline="playsinline" webkit-playsinline="webkit-playsinline">
+    <source src="https://nakamura-inc.jp/assets/video/noren.mp4" type="video/mp4"/>
+  </video>
+  <div class="info">
+    <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)">The Noren</h1>
+    <hr/>
+    <h4 data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)">中むら</h4>
+  </div>
+</header>
+<section id="section_ask">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5"><img src="https://nakamura-inc.jp/assets/img/top/noren/img.jpg" alt="" data-0="transform: translateX(-200px)" data-500="transform: translateY(0px)"/></div>
+      <div class="col-sm-7" data-300="opacity:0" data-500="opacity:1">
+        <h2>Entrance to Japanology</h2>
+        <h4>日本文化と、つながる</h4>
+        <p>暖簾を説明するとき、どんな言葉がふさわしいのでしょうか？店のブランドを示す顔？ 情報を伝える屋外広告？建築空間的には、境界という意味もあります。また、開店の合図ともなります。中むらは、それらを伝える言葉としてENTRANCE TO JAPANOLOGYと説明しています。空間へ暖簾をかけると、そこには往来が生まれます。くぐることで、暖簾の向こう側がちがう世界に通じていることを感じられます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">
+        <h2>Topics</h2><br/>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1"><img src="https://nakamura-inc.jp/api/wp-content/uploads/2020/11/O-1-2-1024x683.jpg" alt=""/></div>
+        <h4 data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">Compartment Noren</h4>
+        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">のれんはチリやホコリ除けからはじまり、平安時代には寝殿造の本殿を仮設で仕切る衣桁や御簾に派生しました。空間を用途や状況に合わせてフレキシブルに変えるのは日本らしい空間の捉え方です。四方を囲い任意の入口をつくるのれんは、自在に空間をコンパートメント化します。</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1"><img src="https://nakamura-inc.jp/api/wp-content/uploads/2021/03/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-03-30-15.04.49-1024x722.png" alt=""/></div>
+        <h4 data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">中むら　カタログリリース</h4>
+        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">中むらのカタログをリリースしました。PDF版は以下より自由にダウンロード頂けます。本カタログは両A面となっており、片側は製作に携わらせて頂いたのれんのポートフォリオで、もう片側はのれんを構成する意味合いをマテリアルで表現しておりさまざまなのれんが見れる設計となっています。</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1"><img src="https://nakamura-inc.jp/api/wp-content/uploads/2020/11/noren_casestudy_01_01.jpg" alt=""/></div>
+        <h4 data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">特殊素材　寒冷紗</h4>
+        <p data-bottom-top="transform:translateY(-50px);opacity:0" data-center="transform: traslateY(0px);opacity: 1">目が粗く薄手で非常に透け感の強い寒冷紗素材の試験。二層に重ねることで独特なモアレが現れます。引染めで地を染めている為、のれんとして紋の染め抜きやグラデーション表現も可能です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_story">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-5" data-bottom-top="background-size:100%; background-position: 0% 0%;" data-center="background-size:150%; background-position: 50% 50%;"></div>
+      <div class="col-sm-7">
+        <div class="col-sm-12" data-bottom-top="transform:scale(1.5);opacity:0" data-center="transform: scale(1);opacity: 1">
+          <h2>A Tradition of Innovation</h2>
+          <h4>製作事例</h4>
+          <p>中むらは格式高いファサードからモダンな空間装飾まで、多様なのれんを製作しています。数多くのプロジェクトに携わった経験をもとに、伝統と革新が織りなすのれんを提案します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_future">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)">
+        <h2>Creation With Japanese Craftsmanship</h2><br/>
+      </div>
+      <div class="col-sm-6" data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)"><img src="https://nakamura-inc.jp/api/wp-content/uploads/2020/10/noren_thumnail_05.jpg" alt=""/></div>
+      <div class="col-sm-6 icon" data-bottom-top="transform:translateX(50px)" data-center="transform:translateX(0px)"><img src="https://image.flaticon.com/icons/png/512/2167/2167725.png" alt=""/>
+        <h4>家紋</h4>
+        <p>花鳥風月に端を発する日本の伝統意匠。のれんに大きく染め抜かれた紋は日本らしい佇まい。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="jumbotron">
+  <div class="container">
+    <p>中むらはつくり手の様々な技術の 長所を活かした「つくる視点」と、</p>
+    <p>のれんの価値が最大限に発揮できる 「つかう視点」を大切にしたご提案を致しま</p>
+    <p>す。お気軽にご相談ください。</p><br/><br/>
+    <input class="form-control" placeholder="Email"/>
+    <buttom class="btn btn-default">Enter</buttom>
+  </div>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+$color_gold: #70644f
+$color_white: #A3A099
+
+*
+  font-family: 'Noto Serif TC','Josefin Sans','Sorts Mill Goudy'
+  // border: solid 1px
+  // // debug
+  // header
+  //   display: none
+  // section
+  //   display: none
+  // section#section_future
+  //   display: block
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: 500
+  color: $color_white
+  letter-spacing: 2px
+  line-height: 50px
+p
+  color: $color_white
+  
+nav.navbar
+  transition: 0.5s
+  background-color: #06101C
+  color: #FFF
+  a
+    color: #FFF
+    &:hover
+      color: $color_gold
+  
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: transparent
+  a
+    color: #fff
+    transition: 0.5s
+    &:hover
+      color: $color_gold
+    
+  
+  
+.fullscreen-video
+  position: relative
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  video
+    position: absolute
+  &.no-ie video
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    height: 100%
+    object-fit: cover
+  
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    background: rgba(#000, .4)
+  .info
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    h1,h4
+      width: 100%
+      text-align: center
+      color: #FFF
+  h1
+    font-size: 6vw
+    font-weight: bold
+  h4
+    font-size: 3vw
+
+section
+  padding: 50px 0px
+    
+section#section_ask
+  background-image: url(https://nakamura-inc.jp/assets/img/cmn_bg.jpg)
+  padding: 120px
+  .col-sm-5
+    img
+      height: auto
+      width: 100%
+      max-width: 100%
+  h2
+    margin-top: 80px
+    padding: 0px
+    font-family: 'Sorts Mill Goudy'
+    color: $color_gold
+  p
+    color: $color_white
+    
+section#section_about
+  background-image: url(https://nakamura-inc.jp/assets/img/cmn_bg.jpg)
+  img
+    width: 120%
+  p
+    color: $color_white
+  .img_wrap
+    height: 220px
+    overflow: hidden   
+  .col-sm-12
+    h2
+      font-family: 'Sorts Mill Goudy'
+      color: $color_gold
+      text-align: center
+      
+section#section_story
+  background-image: url(https://nakamura-inc.jp/assets/img/cmn_bg.jpg)
+  padding: 120px
+  h2
+    font-family: 'Sorts Mill Goudy'
+    color: $color_gold
+    text-align: center
+  .col-sm-5
+    background-image: url(https://nakamura-inc.jp/api/wp-content/uploads/2020/11/%E8%99%8E%E5%B1%8B1.jpg)
+    background-size: 110% auto
+    height: 280px
+
+section#section_future
+  background-image: url(https://nakamura-inc.jp/assets/img/cmn_bg.jpg)
+  padding: 120px
+  
+  h2
+    font-family: 'Sorts Mill Goudy'
+    color: $color_gold
+    text-align: center
+    
+  img
+    width: 90%
+  i
+    font-size: 20px
+  .icon
+    p
+      width: 350px
+    img
+      width: 40px
+      filter: brightness(40)
+      padding-top: 120px
+      padding-bottom: 20px
+
+      
+footer.jumbotron
+  background-image: url(https://nakamura-inc.jp/assets/img/cmn_bg.jpg)
+  text-align: center
+  margin: 0px
+  padding: 120px
+  input
+    background-color: transparent
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
+    border: solid 1px $color_gold
+    color: $color_gold
+    font-family: 'Sorts Mill Goudy'
+  buttom
+    margin: 20px
+    background-color: transparent
+    color: $color_gold
+    border: solid 1px $color_gold
+    font-family: 'Sorts Mill Goudy'
+  p
+    line-height: 1px 
+    font-size: 10px
+    padding-bottom: 20px
+    text-align: center
+    max-width: 450px
+    margin: auto
